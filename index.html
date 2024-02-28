@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Form Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="form-builder">
+  <div id="field-controls">
+    <label for="field-type">Select Field Type:</label>
+    <select id="field-type">
+      <option value="text">Text</option>
+      <option value="email">Email</option>
+      <option value="dropdown">Dropdown</option>
+      <option value="checkbox">Checkbox</option>
+      <option value="radio">Radio Button</option>
+    </select>
+    <button id="add-field-btn">Add Field</button>
+    <button id="add-option-btn">Add Option</button>
+    <button id="export-btn">Export Form</button>
+    <input type="file" id="import-input" accept=".json">
+  </div>
+  <div id="form-area"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
